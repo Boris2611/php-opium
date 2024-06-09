@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap');
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff9900;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #b17317;
+}
+
+
+
+body {
+    background-color: black;
+    font-family: "Nunito", sans-serif;
+    margin: 100px;
+    background-image: url(../assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+
+
+.contentCart,
+.proizvodi {
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    background: rgba(0, 0, 0, 0.315);
+    backdrop-filter: blur(1.3px);
+    border: 3px solid rgba(88, 87, 87, 0.46);
+}
+
+.footerCart {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.checkout-form {
+    margin-top: 20px;
+    background-color: #ffffff00;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 95%;
+}
+
+.checkout-form label {
+    font-weight: bold;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="email"],
+.checkout-form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent; /* Input je sada providan */
+    color: white; /* Tekst je beli */
+}
+
+.checkout-form input[type="text"]:hover,
+.checkout-form input[type="email"]:hover,
+.checkout-form select:hover {
+    border-color: #ff9900; /* Boja granice inputa na hover */
+}
+
+.checkout-form input[type="submit"] {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkout-form input[type="submit"]:hover {
+    background-color: #e68a00;
+}
+
+
+
+.proizvodi ul {
+    list-style: none;
+    padding: 0;
+}
+
+.proizvodi li {
+    margin-bottom: 20px;
+}
+
+.proizvodi .nav {
+    display: flex;
+    align-items: center;
+}
+
+.proizvodi .imgCart {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.proizvodi .cartText {
+    font-size: 16px;
+    margin: 0;
+}
+
+.proizvodi .cartDel {
+    color: #e68a00;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.proizvodi .cartDel:hover {
+    color: #b36e07;
+}
+
+.footerCart {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footerCart hr {
+    width: 100%; /* Hr element se proteže do kraja kontejnera */
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+}
+
+
+.btn {
+        background-color: #ff9900;
+        text-decoration: none;
+        color: #fff;
+        margin: 10px;
+        padding: 15px;
+        border: none;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: .3s;
+        float: right;
+    }
+    
+.btn:hover {
+        background-color: #e68a00;
+        animation: pulse 1s infinite;
+        transition: .3s;
+    }
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(.9);
+    }
+      100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+
+
+.empty-cart-image {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.orange {
+    color: orange;
+    text-decoration: none;
+    text-align: center;
+}
+
+.empty {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        background-color: black;
+        font-family: "Nunito", sans-serif;
+        margin: 0px; /* Promenjeno od 100px na 20px */
+        color: white;
+    }
+
+    .container {
+        width: 90%; /* Promenjeno od 80% na 90% */
+        margin: 0 auto;
+        display: block; /* Promenjeno od flex na block */
+    }
+
+
+    .checkout-form input[type="text"],
+    .checkout-form input[type="email"],
+    .checkout-form select {
+        width: 85%; /* Promenjeno od calc(100% - 20px) na 100% */
+        padding: 8px; /* Promenjeno od 10px na 8px */
+        margin-bottom: 8px; /* Promenjeno od 10px na 8px */
+    }
+
+
+}
+
+.empty-cart-image {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.orange {
+    color: orange;
+    text-decoration: none;
+    text-align: center;
+}
+
+.empty {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.container_2 {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #61616100;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 80px;
+    height: auto;
+}
+
+.receipt-header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.receipt-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.receipt-items ul {
+    list-style: none;
+    padding: 0;
+}
+
+.receipt-items li {
+    margin-bottom: 10px;
+}
+
+.receipt-items li img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.receipt-items li div {
+    background-color: #000000b6;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-items li span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.receipt-items li b {
+    color: #ffffff;
+}
+
+.receipt-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e68a00;
+}
+
+

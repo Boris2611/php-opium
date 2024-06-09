@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap');
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #ff9900;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #b17317;
+}
+
+
+
+/* General styling */
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.849);
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+
+.logo {
+position: absolute;
+   width: 120px;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-item {
+    margin-left: 2rem;
+    position: relative;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #ff9900;
+}
+
+.cart-icon {
+    width: 24px;
+    vertical-align: middle;
+}
+
+.badge {
+    background-color: #ff9900;
+    color: white;
+    border-radius: 50%;
+    padding: 0.25rem 0.5rem;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 0.75rem;
+}
+
+.logout-form {
+    display: inline-block;
+}
+
+.btn {
+    background-color: #ff9900;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: #e68a00;
+    animation: pulse 1s infinite;
+    transition: .3s;
+}
+
+
+.header {
+    background-image: url(../assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    padding: 3rem 0;
+    margin-top: 100px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0px;
+}
+
+.header_img {
+    width: 300px;
+    
+}
+
+.subheading {
+    font-size: 1.25rem;
+}
+
+.filtracija {
+    padding: 10px;
+    padding-top: 20px;
+    background-color: #18181800;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.products {
+    padding: 1rem 0;
+    background-image: url(../assets/bg_4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.card {
+    position: relative; /* Dodajemo relativno pozicioniranje */
+    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+
+    background: rgba(0, 0, 0, 0.315);
+    backdrop-filter: blur(1px);
+    border: 3px solid rgba(88, 87, 87, 0.46);
+    
+    overflow: hidden;
+    margin-bottom: 2rem;
+    padding: 10px;
+    transition: all 0.3s ease;
+    min-height: 450px;
+    color: white;
+
+
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 10rem #e9e9e936;
+    transform: translateY(-10px);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    cursor: pointer;
+    transition: transform 1.2s;
+}
+
+.card-img:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: var(--card-padding);
+
+    
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #3333334f;
+    color: #fff;
+    padding: 0.5rem 0;
+    margin-top: 0px;
+}
+
+.card-footer {
+    position: absolute; /* Postavljamo apsolutno pozicioniranje u odnosu na .card */
+    bottom: 0; /* Postavljamo dno kartice */
+    left: 0; /* Postavljamo levi rub */
+    right: 0; /* Postavljamo desni rub */
+    background-color: #222;
+    color: white;
+    padding: 10px;
+}
+
+.opis,
+.note {
+    text-align: left;
+}
+
+.sifra,
+.pol,
+.brend {
+    font-size: 13px;
+    text-align: left;
+}
+
+.cena {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.cena, .dugme {
+    position: relative;
+    bottom: 0px;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#filter-options {
+    display: inline-block;
+}
+
+#filter-options p,
+#filter-options select {
+    display: inline-block;
+}
+
+.products .container {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.products p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.filter_p {
+    color: #ccc;
+    display: inline;
+}
+
+.products select {
+    background-color: transparent;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+
+#search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    border-radius: 4px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.products select:focus {
+    outline: none;
+    border-color: #ff9900;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+
+    .header {
+        margin-top: 200px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .col {
+        flex: 0 0 45%;
+        max-width: 45%;
+        margin: 2.5%;
+    }
+
+    .card {
+        width: calc(50% - var(--card-padding));
+        min-height: 500px;
+    }
+
+
+    .card-title {
+        font-size: 1rem;
+        
+    }
+
+    .card-img {
+        width: 100%;
+        height: auto;
+        max-height: 170px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    
+}
+
+@media (min-width: 769px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex: 0 0 22%;
+        max-width: 22%;
+        margin: 1.5%;
+    }
+}
+
+@media (min-width: 2000px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex: 0 0 22%;
+        max-width: 15%;
+        margin: 2.5%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    70% {
+      transform: scale(.9);
+    }
+      100% {
+      transform: scale(1);
+    }
+  }
+
+
+/* Hide non-essential nav items when scrolled */
+body.scrolled .navbar .nav-item:not(.important) {
+    display: none;
+}
+
+body.scrolled .navbar {
+    padding: 0.5rem;
+}
+
+
+/* Ensure the cart and logout are in the same row when scrolled */
+body.scrolled .navbar .nav-item.important {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+body.scrolled .navbar .nav-item.important .logout-form {
+    display: inline-block;
+}
+
+body.scrolled .navbar .nav-links {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+

@@ -1,0 +1,102 @@
+/* Animacija */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Generalni stilovi */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff; /* Osiguravamo da je tekst bijele boje */
+    background-image: url(../assets/bg_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Stilovi za formu za prijavljivanje i registraciju */
+.back {
+    background-color: #242424d3;
+    padding: 40px 30px;
+    border-radius: 10px;
+    transform: scale(1.2); /* Smanjujemo formu */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.747); /* Dodajemo sjenku */
+    animation: fadeIn 0.5s ease-out; /* Dodajemo animaciju fade-in za formu */
+}
+
+.center {
+    text-align: center;
+}
+
+.content {
+    color: white;
+}
+
+.control {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    margin-bottom: 15px;
+    background-color: #1a1a1a; /* Tamna pozadina za inpute */
+    color: white; /* Bijela boja teksta za inpute */
+    animation: fadeIn 0.5s ease-in-out; /* Dodajemo animaciju fade-in za inpute */
+}
+
+.control::placeholder {
+    color: #888; /* Svjetlija boja za placeholder tekst */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e68a00;
+}
+
+hr {
+    border-top: 1px solid #888;
+    margin: 20px 0;
+    animation: fadeIn 0.5s ease-in-out; /* Dodajemo animaciju fade-in za horizontalnu liniju */
+}
+
+a {
+    color: #ff9900;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Dodajemo prijelaz za hover efekt */
+    animation: fadeIn 0.5s ease-in-out; /* Dodajemo animaciju fade-in za linkove */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ff9900; /* Promjena boje linka prilikom hover-a */
+}
+
+p {
+    font-size: 13px;
+    margin: 10px 0;
+    animation: fadeIn 0.5s ease-in-out; /* Dodajemo animaciju fade-in za tekst */
+}
